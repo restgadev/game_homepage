@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- MY CSS -->
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+  <!-- Booststrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all" />
+  <!-- Fontawasome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body >
+  <!-- Navbar Start -->
+ <nav class="navbar bg-body-tertiary fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="img/icon.svg" alt="Bootstrap" width="50" height="30">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"><i class="fa-sharp fa-solid fa-house"></i> Beranda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#"><i class="fa-solid fa-magnifying-glass"></i> Cek Pesanan</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#"><i class="fa-solid fa-tag"></i> Daftar Harga</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-arrow-right-to-bracket"></i>
+            Masuk/Daftar
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-arrow-right-to-bracket"></i> Masuk</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user-plus"></i> Daftar</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <!-- ./End -->
+  <!-- Slider Start -->
+  <section class="slider-home">
+  <div id="carouselExampleAutoplaying" class="carousel carousel-light slide" data-bs-ride="carousel">
+   <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div> 
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/slide-1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/slide-2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/slide-3.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  </div>
+</section>
+  <!-- ./End -->
+    <!-- Text Home Start -->
+    <section class="text-home">
+    <ul class="nav nav-pills nav-fill  " id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-body); --bs-nav-pills-link-active-color: black; --bs-nav-pills-link-active-bg: #FFC300;">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Game</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Pulsa</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">EMoney</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Social</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link " id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Premium</button>
+  </li>
+</ul>
+</section>
+    <!-- ./End -->
+       <!-- Search Start -->
+    <div class="wrapper">
+      <div class="search-input">
+        <a href="" target="_blank" hidden></a>
+        <input type="text" placeholder="Search products..">
+        <div class="autocom-box">
+          <!-- here list are inserted from javascript -->
+        </div>
+        <div class="icon"><i class="fas fa-search"></i></div>
+      </div>
+    </div>
+    <!-- ./End -->
+    <!-- Text Conten Start -->
+    <div class="text-conten">
+      <h3 class="text">Topup
+      <hr/>
+      </h3>
+    </div>
+    <!-- ./End -->
+    <!-- content Start -->
+    <section class="container">
+      <div class="container-fluid">
+      <div class="col-lg-9 mx-auto mt-4">
+        <div class="row row-cols-3 row-cols-md-6 g-2">
+          <!-- Mobile legend -->
+          <div class="col mt-3">
+        <div class="card shadow-100 rounded-card1" >
+        <img src="img/icon/MLBB_M4_tile.jpg" class="card-img-top rounded-img-buy p-0 m-0" alt="..">
+        <div class="wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFC300" fill-opacity="1" d="M0,256L65.5,64L130.9,128L196.4,96L261.8,96L327.3,64L392.7,192L458.2,128L523.6,128L589.1,32L654.5,0L720,128L785.5,224L850.9,96L916.4,160L981.8,224L1047.3,160L1112.7,96L1178.2,0L1243.6,256L1309.1,224L1374.5,192L1440,256L1440,320L1374.5,320L1309.1,320L1243.6,320L1178.2,320L1112.7,320L1047.3,320L981.8,320L916.4,320L850.9,320L785.5,320L720,320L654.5,320L589.1,320L523.6,320L458.2,320L392.7,320L327.3,320L261.8,320L196.4,320L130.9,320L65.5,320L0,320Z"></path></svg>
+    </div>
+      <div class="card-body py-md-0 pb-3 d-none d-lg-block text-center">
+    <div class="row h-100" style="font-size:9px;">
+   <small>MOBILE LEGENDS</small>
+  </div>
+  </div>
+  <div class="card-body p-0 py-md-0 d-lg-none text-center">
+      <div class="row h-100" style="font-size:13px;">
+    <div class="col-hp">
+<small>MOBILE LEGENDS</small>
+
+  </div>
+  </div>
+        </div>
+        </div>
+          </div>
+          <!-- FREE FIRE -->
+          <div class="col mt-3">
+        <div class="card shadow-100 rounded-card1" style="max-widht: 100%">
+        <img src="img/icon/freefire_tile.jpg" class="card-img-top rounded-img-buy p-0 m-0" alt="..">
+        <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFC300" fill-opacity="1" d="M0,256L65.5,64L130.9,128L196.4,96L261.8,96L327.3,64L392.7,192L458.2,128L523.6,128L589.1,32L654.5,0L720,128L785.5,224L850.9,96L916.4,160L981.8,224L1047.3,160L1112.7,96L1178.2,0L1243.6,256L1309.1,224L1374.5,192L1440,256L1440,320L1374.5,320L1309.1,320L1243.6,320L1178.2,320L1112.7,320L1047.3,320L981.8,320L916.4,320L850.9,320L785.5,320L720,320L654.5,320L589.1,320L523.6,320L458.2,320L392.7,320L327.3,320L261.8,320L196.4,320L130.9,320L65.5,320L0,320Z"></path></svg>
+    </div>
+      <div class="card-body py-md-0 pb-3 d-none d-lg-block text-center">
+    <div class="row h-100" style="font-size:9px;">
+   <small>FREE FIRE</small>
+  </div>
+  </div>
+  <div class="card-body p-0 py-md-0 d-lg-none text-center">
+      <div class="row h-100" style="font-size:13px;">
+    <div class="col-hp">
+<small>FREE FIRE</small>
+
+  </div>
+  </div>
+        </div>
+        </div>
+          </div>
+          <!-- DOMINO -->
+          <div class="col mt-3">
+        <div class="card shadow-100 rounded-card1" style="max-widht: 100%">
+        <img src="img/icon/higgs_tile.jpeg" class="card-img-top rounded-img-buy p-0 m-0"  alt="..">
+        <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFC300" fill-opacity="1" d="M0,256L65.5,64L130.9,128L196.4,96L261.8,96L327.3,64L392.7,192L458.2,128L523.6,128L589.1,32L654.5,0L720,128L785.5,224L850.9,96L916.4,160L981.8,224L1047.3,160L1112.7,96L1178.2,0L1243.6,256L1309.1,224L1374.5,192L1440,256L1440,320L1374.5,320L1309.1,320L1243.6,320L1178.2,320L1112.7,320L1047.3,320L981.8,320L916.4,320L850.9,320L785.5,320L720,320L654.5,320L589.1,320L523.6,320L458.2,320L392.7,320L327.3,320L261.8,320L196.4,320L130.9,320L65.5,320L0,320Z"></path></svg>
+    </div>
+      <div class="card-body py-md-0 pb-3 d-none d-lg-block text-center">
+    <div class="row h-100" style="font-size:9px;">
+   <small>Higgs Domino</small>
+  </div>
+  </div>
+  <div class="card-body p-0 py-md-0 d-lg-none text-center">
+      <div class="row h-100" style="font-size:12px;">
+    <div class="col-hp">
+<small>HIGGS DOMINO</small>
+
+  </div>
+  </div>
+        </div>
+        </div>
+          </div>
+          <!-- GENSHIN -->
+          <div class="col mt-3">
+        <div class="card shadow-100 rounded-card1" style="max-widht: 100%">
+        <img src="img/icon/genshinimpact_tile.jpg" class="card-img-top rounded-img-buy p-0 m-0" alt="..">
+        <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFC300" fill-opacity="1" d="M0,256L65.5,64L130.9,128L196.4,96L261.8,96L327.3,64L392.7,192L458.2,128L523.6,128L589.1,32L654.5,0L720,128L785.5,224L850.9,96L916.4,160L981.8,224L1047.3,160L1112.7,96L1178.2,0L1243.6,256L1309.1,224L1374.5,192L1440,256L1440,320L1374.5,320L1309.1,320L1243.6,320L1178.2,320L1112.7,320L1047.3,320L981.8,320L916.4,320L850.9,320L785.5,320L720,320L654.5,320L589.1,320L523.6,320L458.2,320L392.7,320L327.3,320L261.8,320L196.4,320L130.9,320L65.5,320L0,320Z"></path></svg>
+    </div>
+      <div class="card-body py-md-0 pb-3 d-none d-lg-block text-center">
+    <div class="row h-100" style="font-size:9px;">
+   <small>Genshin Impact</small>
+  </div>
+  </div>
+  <div class="card-body p-0 py-md-0 d-lg-none text-center">
+      <div class="row h-100" style="font-size:12px;">
+    <div class="col-hp">
+<small>GENSHIN IMPACT</small>
+
+  </div>
+  </div>
+        </div>
+        </div>
+          </div>
+          <!-- POINTBLANK -->
+          <div class="col mt-3">
+        <div class="card shadow-100 rounded-card1" style="max-widht: 100%">
+        <img src="img/icon/PointBlank_ID_tile.jpg" class="card-img-top rounded-img-buy p-0 m-0"  alt="..">
+        <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFC300" fill-opacity="1" d="M0,256L65.5,64L130.9,128L196.4,96L261.8,96L327.3,64L392.7,192L458.2,128L523.6,128L589.1,32L654.5,0L720,128L785.5,224L850.9,96L916.4,160L981.8,224L1047.3,160L1112.7,96L1178.2,0L1243.6,256L1309.1,224L1374.5,192L1440,256L1440,320L1374.5,320L1309.1,320L1243.6,320L1178.2,320L1112.7,320L1047.3,320L981.8,320L916.4,320L850.9,320L785.5,320L720,320L654.5,320L589.1,320L523.6,320L458.2,320L392.7,320L327.3,320L261.8,320L196.4,320L130.9,320L65.5,320L0,320Z"></path></svg>
+    </div>
+      <div class="card-body py-md-0 pb-3 d-none d-lg-block text-center">
+    <div class="row h-100" style="font-size:9px;">
+   <small>Point Blank</small>
+  </div>
+  </div>
+  <div class="card-body p-0 py-md-0 d-lg-none text-center">
+      <div class="row h-100" style="font-size:12px;">
+    <div class="col-hp">
+<small>POINT BLANK</small>
+
+  </div>
+  </div>
+        </div>
+        </div>
+          </div>
+          <!-- STUMBEL -->
+          <div class="col mt-3">
+        <div class="card shadow-100 rounded-card1" style="max-widht: 100%">
+        <img src="img/icon/Stumble_Guys_Tile.png" class="card-img-top rounded-img-buy p-0 m-0" alt="..">
+        <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFC300" fill-opacity="1" d="M0,256L65.5,64L130.9,128L196.4,96L261.8,96L327.3,64L392.7,192L458.2,128L523.6,128L589.1,32L654.5,0L720,128L785.5,224L850.9,96L916.4,160L981.8,224L1047.3,160L1112.7,96L1178.2,0L1243.6,256L1309.1,224L1374.5,192L1440,256L1440,320L1374.5,320L1309.1,320L1243.6,320L1178.2,320L1112.7,320L1047.3,320L981.8,320L916.4,320L850.9,320L785.5,320L720,320L654.5,320L589.1,320L523.6,320L458.2,320L392.7,320L327.3,320L261.8,320L196.4,320L130.9,320L65.5,320L0,320Z"></path></svg>
+    </div>
+      <div class="card-body py-md-0 pb-3 d-none d-lg-block text-center">
+    <div class="row h-100" style="font-size:9px;">
+   <small>STUMBLE GUYS</small>
+  </div>
+  </div>
+  <div class="card-body p-0 py-md-0 d-lg-none text-center">
+      <div class="row h-100" style="font-size:12px;">
+    <div class="col-hp">
+<small>STUMBLE GUYS</small>
+
+  </div>
+  </div>
+        </div>
+        </div>
+          </div>
+          <!-- LOL -->
+          <div class="col mt-3">
+        <div class="card shadow-100 rounded-card1" style="max-widht: 100%">
+        <img src="img/icon/lol_tile.jpg" class="card-img-top rounded-img-buy p-0 m-0" alt="..">
+        <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFC300" fill-opacity="1" d="M0,256L65.5,64L130.9,128L196.4,96L261.8,96L327.3,64L392.7,192L458.2,128L523.6,128L589.1,32L654.5,0L720,128L785.5,224L850.9,96L916.4,160L981.8,224L1047.3,160L1112.7,96L1178.2,0L1243.6,256L1309.1,224L1374.5,192L1440,256L1440,320L1374.5,320L1309.1,320L1243.6,320L1178.2,320L1112.7,320L1047.3,320L981.8,320L916.4,320L850.9,320L785.5,320L720,320L654.5,320L589.1,320L523.6,320L458.2,320L392.7,320L327.3,320L261.8,320L196.4,320L130.9,320L65.5,320L0,320Z"></path></svg>
+    </div>
+      <div class="card-body py-md-0 pb-3 d-none d-lg-block text-center">
+    <div class="row h-100" style="font-size:9px;">
+   <small>LEAGUE OF LEGENDS</small>
+  </div>
+  </div>
+  <div class="card-body p-0 py-md-0 d-lg-none text-center">
+      <div class="row h-100" style="font-size:12px;">
+    <div class="col-hp">
+<small>LEAGUE OF L</small>
+
+  </div>
+  </div>
+        </div>
+        </div>
+          </div> 
+          <!-- VALORANT -->
+          <div class="col mt-3">
+        <div class="card shadow-100 rounded-card1" style="max-widht: 100%">
+        <img src="img/icon/valo_tile.jpg" class="card-img-top rounded-img-buy p-0 m-0"  alt="..">
+        <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFC300" fill-opacity="1" d="M0,256L65.5,64L130.9,128L196.4,96L261.8,96L327.3,64L392.7,192L458.2,128L523.6,128L589.1,32L654.5,0L720,128L785.5,224L850.9,96L916.4,160L981.8,224L1047.3,160L1112.7,96L1178.2,0L1243.6,256L1309.1,224L1374.5,192L1440,256L1440,320L1374.5,320L1309.1,320L1243.6,320L1178.2,320L1112.7,320L1047.3,320L981.8,320L916.4,320L850.9,320L785.5,320L720,320L654.5,320L589.1,320L523.6,320L458.2,320L392.7,320L327.3,320L261.8,320L196.4,320L130.9,320L65.5,320L0,320Z"></path></svg>
+    </div>
+      <div class="card-body py-md-0 pb-3 d-none d-lg-block text-center">
+    <div class="row h-100" style="font-size:9px;">
+   <small>VALORANT</small>
+  </div>
+  </div>
+  <div class="card-body p-0 py-md-0 d-lg-none text-center">
+      <div class="row h-100" style="font-size:12px;">
+    <div class="col-hp">
+<small>VALORANT</small>
+
+  </div>
+  </div>
+        </div>
+        </div>
+          </div>
+          <!-- COD -->
+          <div class="col mt-3">
+        <div class="card shadow-100 rounded-card1" style="max-widht: 100%">
+        <img src="img/icon/cod_tile.jpg" class="card-img-top rounded-img-buy p-0 m-0"  alt="..">
+        <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFC300" fill-opacity="1" d="M0,256L65.5,64L130.9,128L196.4,96L261.8,96L327.3,64L392.7,192L458.2,128L523.6,128L589.1,32L654.5,0L720,128L785.5,224L850.9,96L916.4,160L981.8,224L1047.3,160L1112.7,96L1178.2,0L1243.6,256L1309.1,224L1374.5,192L1440,256L1440,320L1374.5,320L1309.1,320L1243.6,320L1178.2,320L1112.7,320L1047.3,320L981.8,320L916.4,320L850.9,320L785.5,320L720,320L654.5,320L589.1,320L523.6,320L458.2,320L392.7,320L327.3,320L261.8,320L196.4,320L130.9,320L65.5,320L0,320Z"></path></svg>
+    </div>
+      <div class="card-body py-md-0 pb-3 d-none d-lg-block text-center">
+    <div class="row h-100" style="font-size:9px;">
+   <small>CALL OF DUTY</small>
+  </div>
+  </div>
+  <div class="card-body p-0 py-md-0 d-lg-none text-center">
+      <div class="row h-100" style="font-size:12px;">
+    <div class="col-hp">
+<small>CALL OF DUTY</small>
+
+  </div>
+  </div>
+        </div>
+        </div>
+          </div>
+          <!-- AOV -->
+          <div class="col mt-3">
+        <div class="card shadow-100 rounded-card1" style="max-widht: 100%">
+        <img src="img/icon/aov_tile.jpg" class="card-img-top rounded-img-buy p-0 m-0" alt="..">
+        <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFC300" fill-opacity="1" d="M0,256L65.5,64L130.9,128L196.4,96L261.8,96L327.3,64L392.7,192L458.2,128L523.6,128L589.1,32L654.5,0L720,128L785.5,224L850.9,96L916.4,160L981.8,224L1047.3,160L1112.7,96L1178.2,0L1243.6,256L1309.1,224L1374.5,192L1440,256L1440,320L1374.5,320L1309.1,320L1243.6,320L1178.2,320L1112.7,320L1047.3,320L981.8,320L916.4,320L850.9,320L785.5,320L720,320L654.5,320L589.1,320L523.6,320L458.2,320L392.7,320L327.3,320L261.8,320L196.4,320L130.9,320L65.5,320L0,320Z"></path></svg>
+    </div>
+      <div class="card-body py-md-0 pb-3 d-none d-lg-block text-center">
+    <div class="row h-100" style="font-size:9px;">
+   <small>ARENA OF VALOR</small>
+  </div>
+  </div>
+  <div class="card-body p-0 py-md-0 d-lg-none text-center">
+      <div class="row h-100" style="font-size:12px;">
+    <div class="col-hp">
+<small>ARENA OF VALOR</small>
+
+  </div>
+  </div>
+        </div>
+        </div>
+          </div>
+          <!-- HONKAI IMPACT 3 -->
+          <div class="col mt-3">
+        <div class="card shadow-100 rounded-card1" style="max-widht: 100%">
+        <img src="img/icon/honkai_tile.jpg" class="card-img-top rounded-img-buy p-0 m-0"  alt="..">
+        <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFC300" fill-opacity="1" d="M0,256L65.5,64L130.9,128L196.4,96L261.8,96L327.3,64L392.7,192L458.2,128L523.6,128L589.1,32L654.5,0L720,128L785.5,224L850.9,96L916.4,160L981.8,224L1047.3,160L1112.7,96L1178.2,0L1243.6,256L1309.1,224L1374.5,192L1440,256L1440,320L1374.5,320L1309.1,320L1243.6,320L1178.2,320L1112.7,320L1047.3,320L981.8,320L916.4,320L850.9,320L785.5,320L720,320L654.5,320L589.1,320L523.6,320L458.2,320L392.7,320L327.3,320L261.8,320L196.4,320L130.9,320L65.5,320L0,320Z"></path></svg>
+    </div>
+      <div class="card-body py-md-0 pb-3 d-none d-lg-block text-center">
+    <div class="row h-100" style="font-size:9px;">
+   <small>HONKAI IMPACT 3</small>
+  </div>
+  </div>
+  <div class="card-body p-0 py-md-0 d-lg-none text-center">
+      <div class="row h-100" style="font-size:12px;">
+    <div class="col-hp">
+<small>HONKAI IMPACT 3</small>
+
+  </div>
+  </div>
+        </div>
+        </div>
+          </div>
+          <!-- DRAGON RAJA -->
+          <div class="col mt-3">
+        <div class="card shadow-100 rounded-card1" style="max-widht: 100%">
+        <img src="img/icon/dragon_tile.jpg" class="card-img-top rounded-img-buy p-0 m-0" alt="..">
+        <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFC300" fill-opacity="1" d="M0,256L65.5,64L130.9,128L196.4,96L261.8,96L327.3,64L392.7,192L458.2,128L523.6,128L589.1,32L654.5,0L720,128L785.5,224L850.9,96L916.4,160L981.8,224L1047.3,160L1112.7,96L1178.2,0L1243.6,256L1309.1,224L1374.5,192L1440,256L1440,320L1374.5,320L1309.1,320L1243.6,320L1178.2,320L1112.7,320L1047.3,320L981.8,320L916.4,320L850.9,320L785.5,320L720,320L654.5,320L589.1,320L523.6,320L458.2,320L392.7,320L327.3,320L261.8,320L196.4,320L130.9,320L65.5,320L0,320Z"></path></svg>
+    </div>
+      <div class="card-body py-md-0 pb-3 d-none d-lg-block text-center">
+    <div class="row h-100" style="font-size:9px;">
+   <small>DRAGON RAJA</small>
+  </div>
+  </div>
+  <div class="card-body p-0 py-md-0 d-lg-none text-center">
+      <div class="row h-100" style="font-size:12px;">
+    <div class="col-hp">
+<small>DRAGON RAJA</small>
+
+  </div>
+  </div>
+        </div>
+        </div>
+          </div>
+          <!-- SAUSAGE MAN -->
+          <div class="col mt-3">
+        <div class="card shadow-100 rounded-card1" style="max-widht: 100%">
+        <img src="img/icon/sosis_tile.jpg" class="card-img-top rounded-img-buy p-0 m-0"  alt="..">
+        <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFC300" fill-opacity="1" d="M0,256L65.5,64L130.9,128L196.4,96L261.8,96L327.3,64L392.7,192L458.2,128L523.6,128L589.1,32L654.5,0L720,128L785.5,224L850.9,96L916.4,160L981.8,224L1047.3,160L1112.7,96L1178.2,0L1243.6,256L1309.1,224L1374.5,192L1440,256L1440,320L1374.5,320L1309.1,320L1243.6,320L1178.2,320L1112.7,320L1047.3,320L981.8,320L916.4,320L850.9,320L785.5,320L720,320L654.5,320L589.1,320L523.6,320L458.2,320L392.7,320L327.3,320L261.8,320L196.4,320L130.9,320L65.5,320L0,320Z"></path></svg>
+    </div>
+      <div class="card-body py-md-0 pb-3 d-none d-lg-block text-center">
+    <div class="row h-100" style="font-size:9px;">
+   <small>SAUSAGE MAN</small>
+  </div>
+  </div>
+  <div class="card-body p-0 py-md-0 d-lg-none text-center">
+      <div class="row h-100" style="font-size:12px;">
+    <div class="col-hp">
+<small>SAUSAGE MAN</small>
+
+  </div>
+  </div>
+        </div>
+        </div>
+          </div> 
+          <!-- ROGNAROK M -->
+          <div class="col mt-3">
+        <div class="card shadow-100 rounded-card1" style="max-widht: 100%">
+        <img src="img/icon/rog_tile.jpg" class="card-img-top rounded-img-buy p-0 m-0" alt="..">
+        <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFC300" fill-opacity="1" d="M0,256L65.5,64L130.9,128L196.4,96L261.8,96L327.3,64L392.7,192L458.2,128L523.6,128L589.1,32L654.5,0L720,128L785.5,224L850.9,96L916.4,160L981.8,224L1047.3,160L1112.7,96L1178.2,0L1243.6,256L1309.1,224L1374.5,192L1440,256L1440,320L1374.5,320L1309.1,320L1243.6,320L1178.2,320L1112.7,320L1047.3,320L981.8,320L916.4,320L850.9,320L785.5,320L720,320L654.5,320L589.1,320L523.6,320L458.2,320L392.7,320L327.3,320L261.8,320L196.4,320L130.9,320L65.5,320L0,320Z"></path></svg>
+    </div>
+      <div class="card-body py-md-0 pb-3 d-none d-lg-block text-center">
+    <div class="row h-100" style="font-size:9px;">
+   <small>ROGNAROK M</small>
+  </div>
+  </div>
+  <div class="card-body p-0 py-md-0 d-lg-none text-center">
+      <div class="row h-100" style="font-size:12px;">
+    <div class="col-hp">
+<small>ROGNAROK M</small>
+
+  </div>
+  </div>
+        </div>
+        </div>
+          </div>
+          <!-- LIFE AFTER -->
+          <div class="col mt-3">
+        <div class="card shadow-100 rounded-card1" style="max-widht: 100%">
+        <img src="img/icon/life_tile.jpg" class="card-img-top rounded-img-buy p-0 m-0" alt="..">
+        <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFC300" fill-opacity="1" d="M0,256L65.5,64L130.9,128L196.4,96L261.8,96L327.3,64L392.7,192L458.2,128L523.6,128L589.1,32L654.5,0L720,128L785.5,224L850.9,96L916.4,160L981.8,224L1047.3,160L1112.7,96L1178.2,0L1243.6,256L1309.1,224L1374.5,192L1440,256L1440,320L1374.5,320L1309.1,320L1243.6,320L1178.2,320L1112.7,320L1047.3,320L981.8,320L916.4,320L850.9,320L785.5,320L720,320L654.5,320L589.1,320L523.6,320L458.2,320L392.7,320L327.3,320L261.8,320L196.4,320L130.9,320L65.5,320L0,320Z"></path></svg>
+    </div>
+      <div class="card-body py-md-0 pb-3 d-none d-lg-block text-center">
+    <div class="row h-100" style="font-size:9px;">
+   <small>LIFE AFTER</small>
+  </div>
+  </div>
+  <div class="card-body p-0 py-md-0 d-lg-none text-center">
+      <div class="row h-100" style="font-size:12px;">
+    <div class="col-hp">
+<small>LIFE AFTER</small>
+
+  </div>
+  </div>
+        </div>
+        </div>
+          </div> 
+          <!-- LORDS MOBILE -->
+          <div class="col mt-3">
+        <div class="card shadow-100 rounded-card1" style="max-widht: 100%">
+        <img src="img/icon/lord_tile.jpg" class="card-img-top rounded-img-buy p-0 m-0"  alt="..">
+        <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFC300" fill-opacity="1" d="M0,256L65.5,64L130.9,128L196.4,96L261.8,96L327.3,64L392.7,192L458.2,128L523.6,128L589.1,32L654.5,0L720,128L785.5,224L850.9,96L916.4,160L981.8,224L1047.3,160L1112.7,96L1178.2,0L1243.6,256L1309.1,224L1374.5,192L1440,256L1440,320L1374.5,320L1309.1,320L1243.6,320L1178.2,320L1112.7,320L1047.3,320L981.8,320L916.4,320L850.9,320L785.5,320L720,320L654.5,320L589.1,320L523.6,320L458.2,320L392.7,320L327.3,320L261.8,320L196.4,320L130.9,320L65.5,320L0,320Z"></path></svg>
+    </div>
+      <div class="card-body py-md-0 pb-3 d-none d-lg-block text-center">
+    <div class="row h-100" style="font-size:9px;">
+   <small>LORDS MOBILE</small>
+  </div>
+  </div>
+  <div class="card-body p-0 py-md-0 d-lg-none text-center">
+      <div class="row h-100" style="font-size:12px;">
+    <div class="col-hp">
+<small>LORDS MOBILEK</small>
+
+  </div>
+  </div>
+        </div>
+        </div>
+          </div>
+          <!-- TOM AND JERRY -->
+          <div class="col mt-3">
+        <div class="card shadow-100 rounded-card1" style="max-widht: 100%">
+        <img src="img/icon/tom_tile.jpg" class="card-img-top rounded-img-buy p-0 m-0"  alt="..">
+        <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFC300" fill-opacity="1" d="M0,256L65.5,64L130.9,128L196.4,96L261.8,96L327.3,64L392.7,192L458.2,128L523.6,128L589.1,32L654.5,0L720,128L785.5,224L850.9,96L916.4,160L981.8,224L1047.3,160L1112.7,96L1178.2,0L1243.6,256L1309.1,224L1374.5,192L1440,256L1440,320L1374.5,320L1309.1,320L1243.6,320L1178.2,320L1112.7,320L1047.3,320L981.8,320L916.4,320L850.9,320L785.5,320L720,320L654.5,320L589.1,320L523.6,320L458.2,320L392.7,320L327.3,320L261.8,320L196.4,320L130.9,320L65.5,320L0,320Z"></path></svg>
+    </div>
+      <div class="card-body py-md-0 pb-3 d-none d-lg-block text-center">
+    <div class="row h-100" style="font-size:9px;">
+   <small>TOM AND JERRY</small>
+  </div>
+  </div>
+  <div class="card-body p-0 py-md-0 d-lg-none text-center">
+      <div class="row h-100" style="font-size:12px;">
+    <div class="col-hp">
+<small>TOM AND JERRY</small>
+
+  </div>
+  </div>
+        </div>
+        </div>
+          </div>
+          <!-- LIGHT OF THEL -->
+          <div class="col mt-3">
+        <div class="card shadow-100 rounded-card1" style="max-widht: 100%">
+        <img src="img/icon/light_tile.jpg" class="card-img-top rounded-img-buy p-0 m-0"  alt="..">
+        <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFC300" fill-opacity="1" d="M0,256L65.5,64L130.9,128L196.4,96L261.8,96L327.3,64L392.7,192L458.2,128L523.6,128L589.1,32L654.5,0L720,128L785.5,224L850.9,96L916.4,160L981.8,224L1047.3,160L1112.7,96L1178.2,0L1243.6,256L1309.1,224L1374.5,192L1440,256L1440,320L1374.5,320L1309.1,320L1243.6,320L1178.2,320L1112.7,320L1047.3,320L981.8,320L916.4,320L850.9,320L785.5,320L720,320L654.5,320L589.1,320L523.6,320L458.2,320L392.7,320L327.3,320L261.8,320L196.4,320L130.9,320L65.5,320L0,320Z"></path></svg>
+    </div>
+      <div class="card-body py-md-0 pb-3 d-none d-lg-block text-center">
+    <div class="row h-100" style="font-size:9px;">
+   <small>LIGHT OF THEL</small>
+  </div>
+  </div>
+  <div class="card-body p-0 py-md-0 d-lg-none text-center">
+      <div class="row h-100" style="font-size:12px;">
+    <div class="col-hp">
+<small>LIGHT OF THEL</small>
+
+  </div>
+  </div>
+        </div>
+        </div>
+          </div> 
+          <!-- MARVEL -->
+          <div class="col mt-3">
+        <div class="card shadow-100 rounded-card1" style="max-widht: 100%">
+        <img src="img/icon/marvel_tile.jpg" class="card-img-top rounded-img-buy p-0 m-0"  alt="..">
+        <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFC300" fill-opacity="1" d="M0,256L65.5,64L130.9,128L196.4,96L261.8,96L327.3,64L392.7,192L458.2,128L523.6,128L589.1,32L654.5,0L720,128L785.5,224L850.9,96L916.4,160L981.8,224L1047.3,160L1112.7,96L1178.2,0L1243.6,256L1309.1,224L1374.5,192L1440,256L1440,320L1374.5,320L1309.1,320L1243.6,320L1178.2,320L1112.7,320L1047.3,320L981.8,320L916.4,320L850.9,320L785.5,320L720,320L654.5,320L589.1,320L523.6,320L458.2,320L392.7,320L327.3,320L261.8,320L196.4,320L130.9,320L65.5,320L0,320Z"></path></svg>
+    </div>
+      <div class="card-body py-md-0 pb-3 d-none d-lg-block text-center">
+    <div class="row h-100" style="font-size:9px;">
+   <small>MARVEL SUPER </small>
+  </div>
+  </div>
+  <div class="card-body p-0 py-md-0 d-lg-none text-center">
+      <div class="row h-100" style="font-size:12px;">
+    <div class="col-hp">
+<small>MARVEL SUPER </small>
+
+  </div>
+  </div>
+        </div>
+        </div>
+          </div> 
+          <!-- ORIGIN 3 -->
+          <div class="col mt-3">
+        <div class="card shadow-100 rounded-card1" style="max-widht: 100%">
+        <img src="img/icon/origin_tile.jpg" class="card-img-top rounded-img-buy p-0 m-0"  alt="..">
+        <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFC300" fill-opacity="1" d="M0,256L65.5,64L130.9,128L196.4,96L261.8,96L327.3,64L392.7,192L458.2,128L523.6,128L589.1,32L654.5,0L720,128L785.5,224L850.9,96L916.4,160L981.8,224L1047.3,160L1112.7,96L1178.2,0L1243.6,256L1309.1,224L1374.5,192L1440,256L1440,320L1374.5,320L1309.1,320L1243.6,320L1178.2,320L1112.7,320L1047.3,320L981.8,320L916.4,320L850.9,320L785.5,320L720,320L654.5,320L589.1,320L523.6,320L458.2,320L392.7,320L327.3,320L261.8,320L196.4,320L130.9,320L65.5,320L0,320Z"></path></svg>
+    </div>
+      <div class="card-body py-md-0 pb-3 d-none d-lg-block text-center">
+    <div class="row h-100" style="font-size:9px;">
+   <small>MU ORIGIN 3</small>
+  </div>
+  </div>
+  <div class="card-body p-0 py-md-0 d-lg-none text-center">
+      <div class="row h-100" style="font-size:12px;">
+    <div class="col-hp">
+<small>MU ORIGIN 3</small>
+
+  </div>
+  </div>
+        </div>
+        </div>
+          </div>
+          <!-- ORIGIN 2 -->
+          <div class="col mt-3">
+        <div class="card shadow-100 rounded-card1" style="max-widht: 100%">
+        <img src="img/icon/origin2_tile.jpg" class="card-img-top rounded-img-buy p-0 m-0"  alt="..">
+        <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFC300" fill-opacity="1" d="M0,256L65.5,64L130.9,128L196.4,96L261.8,96L327.3,64L392.7,192L458.2,128L523.6,128L589.1,32L654.5,0L720,128L785.5,224L850.9,96L916.4,160L981.8,224L1047.3,160L1112.7,96L1178.2,0L1243.6,256L1309.1,224L1374.5,192L1440,256L1440,320L1374.5,320L1309.1,320L1243.6,320L1178.2,320L1112.7,320L1047.3,320L981.8,320L916.4,320L850.9,320L785.5,320L720,320L654.5,320L589.1,320L523.6,320L458.2,320L392.7,320L327.3,320L261.8,320L196.4,320L130.9,320L65.5,320L0,320Z"></path></svg>
+    </div>
+      <div class="card-body py-md-0 pb-3 d-none d-lg-block text-center">
+    <div class="row h-100" style="font-size:9px;">
+   <small>MU ORIGIN 2</small>
+  </div>
+  </div>
+  <div class="card-body p-0 py-md-0 d-lg-none text-center">
+      <div class="row h-100" style="font-size:12px;">
+    <div class="col-hp">
+<small>MU ORIGIN 2</small>
+
+  </div>
+  </div>
+        </div>
+        </div>
+          </div> 
+          <!-- ONE PUCH MAN -->
+          <div class="col mt-3">
+        <div class="card shadow-100 rounded-card1" style="max-widht: 100%">
+        <img src="img/icon/one_tile.jpg" class="card-img-top rounded-img-buy p-0 m-0" alt="..">
+        <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFC300" fill-opacity="1" d="M0,256L65.5,64L130.9,128L196.4,96L261.8,96L327.3,64L392.7,192L458.2,128L523.6,128L589.1,32L654.5,0L720,128L785.5,224L850.9,96L916.4,160L981.8,224L1047.3,160L1112.7,96L1178.2,0L1243.6,256L1309.1,224L1374.5,192L1440,256L1440,320L1374.5,320L1309.1,320L1243.6,320L1178.2,320L1112.7,320L1047.3,320L981.8,320L916.4,320L850.9,320L785.5,320L720,320L654.5,320L589.1,320L523.6,320L458.2,320L392.7,320L327.3,320L261.8,320L196.4,320L130.9,320L65.5,320L0,320Z"></path></svg>
+    </div>
+      <div class="card-body py-md-0 pb-3 d-none d-lg-block text-center">
+    <div class="row h-100" style="font-size:9px;">
+   <small>ONE PUCH MAN</small>
+  </div>
+  </div>
+  <div class="card-body p-0 py-md-0 d-lg-none text-center">
+      <div class="row h-100" style="font-size:12px;">
+    <div class="col-hp">
+<small>ONE PUCH MAN</small>
+
+  </div>
+  </div>
+        </div>
+        </div>
+          </div> 
+          <!-- OMEGA -->
+          <div class="col mt-3">
+        <div class="card shadow-100 rounded-card1" style="max-widht: 100%">
+        <img src="img/icon/omega_tile.jpg" class="card-img-top rounded-img-buy p-0 m-0"  alt="..">
+        <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFC300" fill-opacity="1" d="M0,256L65.5,64L130.9,128L196.4,96L261.8,96L327.3,64L392.7,192L458.2,128L523.6,128L589.1,32L654.5,0L720,128L785.5,224L850.9,96L916.4,160L981.8,224L1047.3,160L1112.7,96L1178.2,0L1243.6,256L1309.1,224L1374.5,192L1440,256L1440,320L1374.5,320L1309.1,320L1243.6,320L1178.2,320L1112.7,320L1047.3,320L981.8,320L916.4,320L850.9,320L785.5,320L720,320L654.5,320L589.1,320L523.6,320L458.2,320L392.7,320L327.3,320L261.8,320L196.4,320L130.9,320L65.5,320L0,320Z"></path></svg>
+    </div>
+      <div class="card-body py-md-0 pb-3 d-none d-lg-block text-center">
+    <div class="row h-100" style="font-size:9px;">
+   <small>OMEGA LEGEND</small>
+  </div>
+  </div>
+  <div class="card-body p-0 py-md-0 d-lg-none text-center">
+      <div class="row h-100" style="font-size:12px;">
+    <div class="col-hp">
+<small>OMEGA LEGEND</small>
+
+  </div>
+  </div>
+        </div>
+        </div>
+          </div> 
+          <!-- MANGA TOON -->
+          <div class="col mt-3">
+        <div class="card shadow-100 rounded-card1" style="max-widht: 100%">
+        <img src="img/icon/mangga_tile.jpg" class="card-img-top rounded-img-buy p-0 m-0" alt="..">
+        <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFC300" fill-opacity="1" d="M0,256L65.5,64L130.9,128L196.4,96L261.8,96L327.3,64L392.7,192L458.2,128L523.6,128L589.1,32L654.5,0L720,128L785.5,224L850.9,96L916.4,160L981.8,224L1047.3,160L1112.7,96L1178.2,0L1243.6,256L1309.1,224L1374.5,192L1440,256L1440,320L1374.5,320L1309.1,320L1243.6,320L1178.2,320L1112.7,320L1047.3,320L981.8,320L916.4,320L850.9,320L785.5,320L720,320L654.5,320L589.1,320L523.6,320L458.2,320L392.7,320L327.3,320L261.8,320L196.4,320L130.9,320L65.5,320L0,320Z"></path></svg>
+    </div>
+      <div class="card-body py-md-0 pb-3 d-none d-lg-block text-center">
+    <div class="row h-100" style="font-size:9px;">
+   <small>MANGA TOON</small>
+  </div>
+  </div>
+  <div class="card-body p-0 py-md-0 d-lg-none text-center">
+      <div class="row h-100" style="font-size:12px;">
+    <div class="col-hp">
+<small>MANGA TOON</small>
+
+  </div>
+  </div>
+        </div>
+        </div>
+          </div>
+          <!-- HYPER FRONT -->
+          <div class="col mt-3">
+        <div class="card shadow-100 rounded-card1" style="max-widht: 100%">
+        <img src="img/icon/hyper_tile.jpg" class="card-img-top rounded-img-buy p-0 m-0"  alt="..">
+        <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFC300" fill-opacity="1" d="M0,256L65.5,64L130.9,128L196.4,96L261.8,96L327.3,64L392.7,192L458.2,128L523.6,128L589.1,32L654.5,0L720,128L785.5,224L850.9,96L916.4,160L981.8,224L1047.3,160L1112.7,96L1178.2,0L1243.6,256L1309.1,224L1374.5,192L1440,256L1440,320L1374.5,320L1309.1,320L1243.6,320L1178.2,320L1112.7,320L1047.3,320L981.8,320L916.4,320L850.9,320L785.5,320L720,320L654.5,320L589.1,320L523.6,320L458.2,320L392.7,320L327.3,320L261.8,320L196.4,320L130.9,320L65.5,320L0,320Z"></path></svg>
+    </div>
+      <div class="card-body py-md-0 pb-3 d-none d-lg-block text-center">
+    <div class="row h-100" style="font-size:9px;">
+   <small>HYPER FRONT</small>
+  </div>
+  </div>
+  <div class="card-body p-0 py-md-0 d-lg-none text-center">
+      <div class="row h-100" style="font-size:12px;">
+    <div class="col-hp">
+<small>HYPER FRONT</small>
+
+  </div>
+  </div>
+        </div>
+        </div>
+          </div>
+          <!-- FOOTBAL MS2 -->
+          <div class="col mt-3">
+        <div class="card shadow-100 rounded-card1" style="max-widht: 100%">
+        <img src="img/icon/footbal_tile.jpg" class="card-img-top rounded-img-buy p-0 m-0" alt="..">
+        <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFC300" fill-opacity="1" d="M0,256L65.5,64L130.9,128L196.4,96L261.8,96L327.3,64L392.7,192L458.2,128L523.6,128L589.1,32L654.5,0L720,128L785.5,224L850.9,96L916.4,160L981.8,224L1047.3,160L1112.7,96L1178.2,0L1243.6,256L1309.1,224L1374.5,192L1440,256L1440,320L1374.5,320L1309.1,320L1243.6,320L1178.2,320L1112.7,320L1047.3,320L981.8,320L916.4,320L850.9,320L785.5,320L720,320L654.5,320L589.1,320L523.6,320L458.2,320L392.7,320L327.3,320L261.8,320L196.4,320L130.9,320L65.5,320L0,320Z"></path></svg>
+    </div>
+      <div class="card-body py-md-0 pb-3 d-none d-lg-block text-center">
+    <div class="row h-100" style="font-size:9px;">
+   <small>FOOTBAL MASTER </small>
+  </div>
+  </div>
+  <div class="card-body p-0 py-md-0 d-lg-none text-center">
+      <div class="row h-100" style="font-size:12px;">
+    <div class="col-hp">
+<small>FOOTBAL MASTER </small>
+
+  </div>
+  </div>
+        </div>
+        </div>
+          </div>
+          <!-- HEAVEN SAGA -->
+          <div class="col mt-3">
+        <div class="card shadow-100 rounded-card1" style="max-widht: 100%">
+        <img src="img/icon/heavan_tile.jpg" class="card-img-top rounded-img-buy p-0 m-0" alt="..">
+        <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFC300" fill-opacity="1" d="M0,256L65.5,64L130.9,128L196.4,96L261.8,96L327.3,64L392.7,192L458.2,128L523.6,128L589.1,32L654.5,0L720,128L785.5,224L850.9,96L916.4,160L981.8,224L1047.3,160L1112.7,96L1178.2,0L1243.6,256L1309.1,224L1374.5,192L1440,256L1440,320L1374.5,320L1309.1,320L1243.6,320L1178.2,320L1112.7,320L1047.3,320L981.8,320L916.4,320L850.9,320L785.5,320L720,320L654.5,320L589.1,320L523.6,320L458.2,320L392.7,320L327.3,320L261.8,320L196.4,320L130.9,320L65.5,320L0,320Z"></path></svg>
+    </div>
+      <div class="card-body py-md-0 pb-3 d-none d-lg-block text-center">
+    <div class="row h-100" style="font-size:9px;">
+   <small>HEAVEN SAGA</small>
+  </div>
+  </div>
+  <div class="card-body p-0 py-md-0 d-lg-none text-center">
+      <div class="row h-100" style="font-size:12px;">
+    <div class="col-hp">
+<small>HEAVEN SAGA</small>
+
+  </div>
+  </div>
+        </div>
+        </div>
+          </div> 
+          <!-- CROSING VOID -->
+          <div class="col mt-3">
+        <div class="card shadow-100 rounded-card1" style="max-widht: 100%">
+        <img src="img/icon/void_tile.jpg" class="card-img-top rounded-img-buy p-0 m-0"  alt="..">
+        <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFC300" fill-opacity="1" d="M0,256L65.5,64L130.9,128L196.4,96L261.8,96L327.3,64L392.7,192L458.2,128L523.6,128L589.1,32L654.5,0L720,128L785.5,224L850.9,96L916.4,160L981.8,224L1047.3,160L1112.7,96L1178.2,0L1243.6,256L1309.1,224L1374.5,192L1440,256L1440,320L1374.5,320L1309.1,320L1243.6,320L1178.2,320L1112.7,320L1047.3,320L981.8,320L916.4,320L850.9,320L785.5,320L720,320L654.5,320L589.1,320L523.6,320L458.2,320L392.7,320L327.3,320L261.8,320L196.4,320L130.9,320L65.5,320L0,320Z"></path></svg>
+    </div>
+      <div class="card-body py-md-0 pb-3 d-none d-lg-block text-center">
+    <div class="row h-100" style="font-size:9px;">
+   <small>CROSING VOID</small>
+  </div>
+  </div>
+  <div class="card-body p-0 py-md-0 d-lg-none text-center">
+      <div class="row h-100" style="font-size:12px;">
+    <div class="col-hp">
+<small>CROSING VOID</small>
+
+  </div>
+  </div>
+        </div>
+        </div>
+          </div>
+          <!-- ERA OF CELESTIALS -->
+          <div class="col mt-3">
+        <div class="card shadow-100 rounded-card1" style="max-widht: 100%">
+        <img src="img/icon/era_tile.jpg" class="card-img-top rounded-img-buy p-0 m-0"  alt="..">
+        <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFC300" fill-opacity="1" d="M0,256L65.5,64L130.9,128L196.4,96L261.8,96L327.3,64L392.7,192L458.2,128L523.6,128L589.1,32L654.5,0L720,128L785.5,224L850.9,96L916.4,160L981.8,224L1047.3,160L1112.7,96L1178.2,0L1243.6,256L1309.1,224L1374.5,192L1440,256L1440,320L1374.5,320L1309.1,320L1243.6,320L1178.2,320L1112.7,320L1047.3,320L981.8,320L916.4,320L850.9,320L785.5,320L720,320L654.5,320L589.1,320L523.6,320L458.2,320L392.7,320L327.3,320L261.8,320L196.4,320L130.9,320L65.5,320L0,320Z"></path></svg>
+    </div>
+      <div class="card-body py-md-0 pb-3 d-none d-lg-block text-center">
+    <div class="row h-100" style="font-size:9px;">
+   <small>ERA OF CELESTIALS</small>
+  </div>
+  </div>
+  <div class="card-body p-0 py-md-0 d-lg-none text-center">
+      <div class="row h-100" style="font-size:12px;">
+    <div class="col-hp">
+<small>ERA OF CELESTIALS</small>
+
+  </div>
+  </div>
+        </div>
+        </div>
+          </div>
+          <!-- NARUTO SLUGFEST X -->
+          <div class="col mt-3">
+        <div class="card shadow-100 rounded-card1" style="max-widht: 100%">
+        <img src="img/icon/naruto_tile.jpg" class="card-img-top rounded-img-buy p-0 m-0" alt="..">
+        <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFC300" fill-opacity="1" d="M0,256L65.5,64L130.9,128L196.4,96L261.8,96L327.3,64L392.7,192L458.2,128L523.6,128L589.1,32L654.5,0L720,128L785.5,224L850.9,96L916.4,160L981.8,224L1047.3,160L1112.7,96L1178.2,0L1243.6,256L1309.1,224L1374.5,192L1440,256L1440,320L1374.5,320L1309.1,320L1243.6,320L1178.2,320L1112.7,320L1047.3,320L981.8,320L916.4,320L850.9,320L785.5,320L720,320L654.5,320L589.1,320L523.6,320L458.2,320L392.7,320L327.3,320L261.8,320L196.4,320L130.9,320L65.5,320L0,320Z"></path></svg>
+    </div>
+      <div class="card-body py-md-0 pb-3 d-none d-lg-block text-center">
+    <div class="row h-100" style="font-size:9px;">
+   <small>NARUTO SLUGFEST</small>
+  </div>
+  </div>
+  <div class="card-body p-0 py-md-0 d-lg-none text-center">
+      <div class="row h-100" style="font-size:12px;">
+    <div class="col-hp">
+<small>NARUTO SLUGFEST</small>
+
+  </div>
+  </div>
+        </div>
+        </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- ./end -->
+    <!-- FOOTER SECTION START -->
+    <footer class="footer mt-auto border-dark  shadow-lg">
+       <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-6">
+  <img src="img/icon.svg" alt="LOGO" style="float:left;margin-left:2%;
+    width:40px; " class="bi me-2" loading="lazy">
+<h5 class="text-uppercase mt-2" style="margin:0">TRICOM Store</h5>
+<div class="mt-2">
+<p>TRICOM STORE adalah tempat top up games yang aman, murah dan terpercaya. Proses cepat 1-3 Detik. Open 24 jam. Payment terlengkap. Jika ada kendala silahkan Hubungi Admin</p>
+</div>
+</div>
+<div class="col-lg-3">
+<h5 class="mt-2">Menu</h5>
+<div class="mt-2">
+<ul class="nav flex-column">
+<li class="nav-item">
+<a href="/" class="nav-link text-body active">
+<i class="fas fa-angle-right text-body"></i>
+Home
+</a>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link text-body ">
+<i class="fas fa-angle-right text-body"></i>
+Cek Pesanan
+</a>
+</li>
+ <li class="nav-item">
+<a href="#" class="nav-link text-body ">
+<i class="fas fa-angle-right text-body"></i>
+Daftar Harga
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col">
+<h5 class="mt-2">Other Services</h5>
+<div class="mt-2">
+<ul class="nav flex-column">
+<li class="nav-item">
+<a href="#" class="nav-link text-body">
+<i class="fas fa-angle-right text-body"></i>
+Sausage Man
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid mt-2">
+<div class="row" id="footer-credit" style="background:#181b1f">
+<div class="col">
+<div class="container mt-2 mb-2 text-center text-white">
+<small>
+Copyright &copy; 2023 by <a href="/" class="text-white">TRICOM STORE</a>. All Rights Reserved
+- <a href="#" class="text-white">Terms and
+conditions</a>
+- <a href="#" class="text-white">Privacy Policy</a>
+</small>
+</div>
+</div>
+</div>
+</div>
+</footer>
+    <!-- ./END -->
+  <!-- bootstrap Js -->
+  <script src="js/bootstrap.bundle.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/suggestions.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
